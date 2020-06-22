@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+#birb {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    transform: translate(200px, 200px);
+}
+
+.piller {
+    position: absolute;
+    height: 500px;
+    width: 100px;
+    background: green;
+}

@@ -1,61 +1,62 @@
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, lightblue, rgb(15, 164, 201));
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, lightblue, rgb(15, 164, 201));
 }
 
 body::-webkit-scrollbar {
-    /* WebKit */
-    width: 0;
-    height: 0;
+	/* WebKit */
+	width: 0;
+	height: 0;
 }
 
 #birb {
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    transform: translate(200px, 200px);
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	transform: translate(200px, 200px);
+	transition: transform .1s ease-out;
 }
 
 .piller {
-    position: absolute;
-    height: 500px;
-    width: 100px;
-    background: linear-gradient(to right, lightgreen, green);
+	position: absolute;
+	height: 500px;
+	width: 100px;
+	background: linear-gradient(to right, lightgreen, green);
 }
 
 .cloud {
-    background-image: url('https://pngimg.com/uploads/cloud/cloud_PNG24.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: absolute;
-    width: 400px;
-    height: 100px;
+	background-image: url('https://pngimg.com/uploads/cloud/cloud_PNG24.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	width: 400px;
+	height: 100px;
 }
 
 .gameOver {
-    color: #1B313A;
-    margin-top: 10%;
-    font-size: 120px;
-    font-weight: 200;
-    text-align: center;
+	color: #1b313a;
+	margin-top: 10%;
+	font-size: 120px;
+	font-weight: 200;
+	text-align: center;
 }
 
 .playAgain {
-    position: absolute;
-    color: #8DD2DE;
-    font-weight: 600;
-    border: none;
-    background: #4C99C3;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    width: 200px;
-    height: 50px;
-    left: 45%;
+	position: absolute;
+	color: #8dd2de;
+	font-weight: 600;
+	border: none;
+	background: #4c99c3;
+	border-radius: 20px;
+	font-size: 1.5rem;
+	width: 200px;
+	height: 50px;
+	left: 45%;
 }
 
 .playAgain:hover {
-    background: #F6F5EC;
-    color: #535454;
+	background: #f6f5ec;
+	color: #535454;
 }

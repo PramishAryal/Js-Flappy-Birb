@@ -103,7 +103,6 @@ function isColliding() {
 //Aah yes the main hero, the thing that's holding everything together, without this bad boi to loop the gameLoop nothing would run...
 let intervalId = setInterval(gameLoop, fps);
 
-
 //runs when game is over, clears most of the things and removes the event listeners essentially freezing the game
 function gameOver() {
     clearInterval(intervalId);
@@ -112,6 +111,7 @@ function gameOver() {
     const Over = document.createElement('h1');
     Over.innerText = "Game Over";
     Over.classList.add('gameOver');
+
     setTimeout(() => birb.style.display = "none", 500);
     setTimeout(() => pillerOne.style.display = "none", 1000);
     setTimeout(() => pillerTwo.style.display = "none", 1000);
@@ -121,6 +121,7 @@ function gameOver() {
             clouds[index].style.display = "none"
         }
     }, 1500);
+
     const playAgain = document.createElement('button');
     playAgain.innerText = "Play Again?";
     playAgain.classList.add('playAgain');
@@ -158,11 +159,10 @@ function gameLoop() {
         cloudCompute(index);
     }
     pillerX -= 10;
-    posY += 2.5;
+    posY += 3.5;
     pillerOne.style.left = `${pillerX}px`;
     pillerTwo.style.left = `${pillerX}px`;
     birb.style.transform = `translate(${posX}px,${posY}px)`;
-
     Score.innerText = `Score:${intScore}`;
     if (isColliding()) {
         gameOver();
@@ -173,7 +173,7 @@ function gameLoop() {
 window.addEventListener('click', handleInput);
 //Couldnt use an anon function in the eventlistener to remove it when game is over
 function handleInput() {
-    posY -= 50;
+    posY -= 100;
 }
 
 function cloudCompute(i) {

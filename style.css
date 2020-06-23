@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background: linear-gradient(to right, lightblue, rgb(15, 164, 201));
 }
 
 body::-webkit-scrollbar {
@@ -11,7 +12,7 @@ body::-webkit-scrollbar {
 
 #birb {
     background-color: red;
-    width: 100px;
+    width: 50px;
     height: 50px;
     transform: translate(200px, 200px);
 }
@@ -20,5 +21,15 @@ body::-webkit-scrollbar {
     position: absolute;
     height: 500px;
     width: 100px;
-    background: green;
+    background: linear-gradient(to right, lightgreen, green);
+}
+
+.cloud {
+    background-image: url('https://pngimg.com/uploads/cloud/cloud_PNG24.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 400px;
+    height: 100px;
 }

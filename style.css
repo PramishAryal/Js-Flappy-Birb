@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 .gameOver {
-    color: rgb(0, 255, 42);
+    color: #1B313A;
     margin-top: 10%;
     font-size: 120px;
     font-weight: 200;

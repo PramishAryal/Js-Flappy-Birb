@@ -2,7 +2,8 @@ body {
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(to right, lightblue, rgb(15, 164, 201));
-	user-select: none
+	overflow:hidden;
+	user-select: none;
 }
 
 body::-webkit-scrollbar {
